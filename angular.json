@@ -44,14 +44,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": ["src/global_styles.scss"],
+            "styles": ["src/styles.css"],
             "tsConfig": "src/tsconfig.app.json"
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo:build"
+            "buildTarget": "demo:build"
           }
         },
         "lint": {
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "demo:build:development"
+              "buildTarget": "demo:build:development"
             },
             "production": {
-              "browserTarget": "demo:build:production"
+              "buildTarget": "demo:build:production"
             }
           },
           "defaultConfiguration": "development"
